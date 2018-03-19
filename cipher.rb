@@ -1,6 +1,10 @@
 def caesar_cipher(string, shift_index)
-  #make an array of a-z
-  #convert string into a number
-  #wrap from z-a
-  #keep the same case
+  legend = [*('a'..'z')]
+  message = string.split(//)
+  message.each do |letter|
+    letter.to_i
+  end
+  print legend
 end
+
+print caesar_cipher("Hello", 1)
